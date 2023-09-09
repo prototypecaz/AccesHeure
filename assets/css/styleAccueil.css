@@ -1,0 +1,553 @@
+*{
+    padding:0;
+    margin:0;
+    font-size: 1vw;
+}
+
+#containerForm{
+    height: 100vh;
+    width: 100%;
+    background-color: #F0F2F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#containerForm > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    background-color: white;
+    padding: 1.8vw 2vw 2vw 2vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+input,button{
+    padding:0.8vw;
+    border-radius: 0.3vw;
+    border: 1px solid #DDDFE2;
+    margin-top:1.2vh;
+}
+
+.ligne{
+    height: 0.2vh;
+    background-color: #DADDE1;
+    margin:2vh 0;
+}
+
+button{
+    width: 100%;
+}
+
+button{
+    background-color: #166;
+    color:white;
+    font-weight:bold;
+    cursor:pointer
+}
+
+button:hover{
+    background-color: rgba(17, 102, 102, 0.808);
+}
+
+input:focus{
+    outline: 2px solid #166;
+}
+
+.connexionInvalide{
+    color: red;
+    font-size: 0.7vw;
+}
+
+.containeInvalid{
+    margin-bottom: 0.4vh;
+    display: none;
+}
+
+#containeInscription{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.336);
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#divInscription{
+    background-color: white;
+    padding:1vw;
+}
+
+#divInscription > form{
+    padding:3vw;
+}
+
+.inputInscrip{
+    margin:0
+}
+
+.labelInscrip{
+    margin-top:1.2vh;
+    font-size: 0.75vw;
+    color: #606770;
+}
+
+#btnInscription{
+    margin-top:5vh
+}
+
+.iconeFerme{
+    color:rgba(0, 0, 0, 0.336);
+    font-size:1.6vw;
+    cursor: pointer;
+}
+
+#containeHash{
+    left:2%;
+    transform: translateY(150%);
+    bottom:3.5%;
+    position: absolute;
+    display: none;
+}
+
+#hash{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.8vw 1.6vw;
+    border-radius: 0.3vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    font-weight: bold;
+}
+
+#newCompte,#btnInscription{
+    background-color: rgb(102, 17, 69);
+}
+
+#newCompte:hover,#btnInscription:hover{
+    background-color: rgba(102, 17, 69, 0.733);
+}
+
+#iconeServ,#reponseServ{
+    font-size: 1.3vw;
+}
+
+main{
+    position: relative;
+    overflow: hidden;
+}
+
+.inputUser,.inputPassword,.inputUseInscript{
+    font-style: italic;
+}
+
+@media (max-width: 429px) and (orientation: portrait) {
+    .inputUser,button,.inputPassword{
+        font-size: 6vw;
+    }
+
+    #containerForm > div:nth-child(1){
+        width: 68%;
+        padding:6.8vw 7vw 7vw 7vw
+    }
+
+    input,button{
+        margin-top:3vh;
+        border-radius:1vw;
+        padding:2.3vw
+    }
+
+    .connexionInvalide{
+        font-size: 3.3vw;
+    }
+
+    #iconeServ,#reponseServ{
+        font-size: 6vw;
+    }
+
+    #hash{
+        padding:3.8vw 4.6vw
+    }
+
+    #containeHash{
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:0
+    }
+
+    #divInscription{
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .inputVerif{
+        font-size: 5vw;
+        width: 80%;
+    }
+
+    .inputInscrip{
+        margin:0 auto
+    }
+
+    .labelInscrip{
+        font-size: 3.2vw;
+    }
+
+    .iconeFerme{
+        font-size: 6vw;
+        padding:2vw
+    }
+}
+
+@media (min-width: 429.1px) and (orientation: portrait) {
+    .inputUser,button,.inputPassword{
+        font-size: 3.8vw;
+    }
+
+    #containerForm > div:nth-child(1){
+        width: 63%;
+        padding:6.3vw 6.5vw 6.5vw 6.5vw
+    }
+
+    input,button{
+        margin-top:3vh;
+        border-radius:1vw;
+        padding:1.8vw
+    }
+
+    .connexionInvalide{
+        font-size: 2.1vw;
+    }
+
+    #iconeServ,#reponseServ{
+        font-size: 3.8vw;
+    }
+
+    #hash{
+        padding:2.8vw 3.6vw
+    }
+
+    #containeHash{
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:0
+    }
+
+    #divInscription{
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .inputVerif{
+        font-size: 3vw;
+        width: 80%;
+        margin-top:2vh
+    }
+
+    .inputInscrip{
+        margin:0 auto
+    }
+
+    .labelInscrip{
+        font-size: 2vw;
+    }
+
+    .iconeFerme{
+        font-size: 4vw;
+        padding:2vw
+    }
+
+    #divInscription > form {
+        padding: 0;
+    }
+
+    #btnInscription{
+        width: 80%;
+        margin:4vh auto 0 auto
+    }
+
+}
+
+@media (min-width: 768px) {
+    .inputUser,button,.inputPassword{
+        font-size: 2.5vw;
+    }
+
+    #containerForm > div:nth-child(1){
+        width: 45%;
+        padding:5.8vw 6vw 6vw 6vw
+    }
+
+    input,button{
+        margin-top:3vh;
+        border-radius:1vw;
+        padding:2vw
+    }
+
+    .connexionInvalide{
+        font-size: 1.8vw;
+    }
+
+    #iconeServ,#reponseServ{
+        font-size: 2.5vw;
+    }
+
+    #hash{
+        padding:1.8vw 2.6vw
+    }
+
+    #containeHash{
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:0
+    }
+
+    #divInscription{
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    .inputVerif{
+        font-size: 2.3vw;
+        width: 70%;
+        margin-top:1.8vh;
+        padding:1.5vw
+    }
+
+    .inputInscrip{
+        margin:0 auto
+    }
+
+    .labelInscrip{
+        font-size: 1.8vw;
+    }
+
+    .iconeFerme{
+        font-size: 3vw;
+        padding:2vw
+    }
+
+    #divInscription > form {
+        padding: 0;
+    }
+
+    #btnInscription{
+        width: 70%;
+        margin:3vh auto 0 auto
+    }
+
+
+
+}
+
+@media only screen and (min-device-height: 350px) 
+                    and (max-device-height: 480px) 
+                   and (max-device-width: 927px) 
+                   and (orientation: landscape) {
+    .inputUser,button,.inputPassword{
+        font-size: 2vw;
+    }
+
+    #containerForm > div:nth-child(1){
+        width: 50%;
+        padding:2.3vw 3.5vw 3.5vw 3.5vw
+    }
+
+    input,button{
+        margin-top:3vh;
+        border-radius:1vw;
+        padding:1.4vw
+    }
+
+    .connexionInvalide{
+        font-size: 1.5vw;
+    }
+
+    #iconeServ,#reponseServ{
+        font-size: 2.5vw;
+    }
+
+    #hash{
+        padding:2.8vw 3.6vw
+    }
+
+    #containeHash{
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:0
+    }
+
+    #divInscription{
+        height: auto;
+        width: initial;
+        text-align: initial;
+        padding: 2vw 5vw
+    }
+
+    .inputVerif{
+        font-size: 1.5vw;
+        width: initial;
+        margin-top:3vh;
+        padding:1vw
+    }
+
+    .inputInscrip{
+        margin:initial
+    }
+
+    .labelInscrip{
+        font-size: 1.2vw;
+    }
+
+    .iconeFerme{
+        font-size: 2vw;
+        padding:1vw
+    }
+
+    #divInscription > form {
+        padding: 0;
+    }
+
+    #btnInscription{
+        width: 70%;
+        margin:3vh auto 0 auto
+    }
+}
+
+@media (min-width: 992px) {
+    .inputUser,button,.inputPassword{
+        font-size: 2vw;
+    }
+
+    #containerForm > div:nth-child(1){
+        width: 33%;
+        padding:3.8vw 4vw 4vw 4vw
+    }
+
+    input,button{
+        margin-top:3vh;
+        border-radius:1vw;
+        padding:1.3vw
+    }
+
+    .connexionInvalide{
+        font-size: 1.2vw;
+    }
+
+    #iconeServ,#reponseServ{
+        font-size: 2vw;
+    }
+
+    #hash{
+        padding:1.8vw 2.6vw
+    }
+
+    #containeHash{
+        left:2%;
+        bottom:3.5%;
+        margin:0;
+        right:auto
+    }
+
+    #divInscription{
+        height: auto;
+        width: initial;
+        text-align: initial;
+    }
+
+    .inputVerif{
+        font-size: 2vw;
+        width: initial;
+        margin-top:3vh;
+        padding:1vw
+    }
+
+    .inputInscrip{
+        margin:initial
+    }
+
+    .labelInscrip{
+        font-size: 1.8vw;
+    }
+
+    .iconeFerme{
+        font-size: 2vw;
+        padding:1vw
+    }
+
+    #divInscription > form {
+        padding: 3vw;
+    }
+
+    #btnInscription{
+        width: 70%;
+        margin:3vh auto 0 auto
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .inputUser,button,.inputPassword{
+        font-size: 1.3vw;
+    }
+
+    #containerForm > div:nth-child(1){
+        width: 18%;
+        padding:1.8vw 2vw 2vw 2vw
+    }
+
+    input, button {
+        padding: 0.8vw;
+        border-radius: 0.3vw;
+        margin-top: 1.2vh;
+    }
+
+    .inputVerif{
+    font-size: 1vw;
+    }
+
+    .connexionInvalide{
+        font-size: 0.7vw;
+    }
+
+    #iconeServ,#reponseServ{
+        font-size: 1.3vw;
+    }
+
+    #hash{
+    padding: 0.8vw 1.6vw;
+    }
+
+    .labelInscrip{
+        font-size: 0.75vw;
+    }
+
+    #btnInscription{
+        width: 100%;
+        margin-top: 5vh;
+    }
+
+    .iconeFerme {
+        font-size: 1.6vw;
+        padding:0
+    }
+
+    #containeHash{
+        bottom: 3.5%;
+    }
+}
+

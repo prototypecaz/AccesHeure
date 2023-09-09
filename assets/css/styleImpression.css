@@ -1,0 +1,44 @@
+iframe{
+    margin-left: 1.9vw;
+    width: 13vw;
+    height: 15vw;
+}
+
+.containeIframe{
+    display: flex;
+    margin-top:1.5vw
+}
+
+.spanMois{
+    display: block;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-left: 1.9vw;
+    margin-top: 0.5vw;
+}
+
+input,a{
+    margin-top:2.3vw;
+    background-color: #0084FF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1vw;
+    padding:0.5vw 1vw;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+input:hover,a:hover{
+    outline: 1px solid #0164c0;
+}
+
+a{
+    margin-left: 1.8vw;
+}
+
+input{
+    margin-left:1vw
+}

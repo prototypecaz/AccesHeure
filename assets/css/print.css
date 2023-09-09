@@ -1,0 +1,61 @@
+@media print {
+
+    body{
+        margin:0!important;
+        padding:0!important;
+        box-sizing: border-box!important;
+
+    }
+
+    *{
+          font-family:initial;
+    }
+
+    .infoImprime{
+        display: block;
+        padding:10pt 10pt 0 10pt!important;
+    }
+
+    table{
+       width: 100%;
+       background-color: rgb(255, 255, 255);
+    }
+
+    img{
+        width: 100px!important;
+        height: 50px!important;
+    }
+
+    thead,.total,#kilometreTotal, #totalEuros{
+        font-size: 12pt;
+    }
+    
+    td{
+        font-size: 10pt;
+        padding:4pt 2pt
+    }
+
+    .indemnite{
+        font-size: 9pt!important;
+    }
+
+    .spanPeriode{
+        font-size: 11pt!important;
+    }
+ 
+    .clientPrint{
+        text-transform:uppercase;
+    }
+    
+    body > div:nth-child(3){
+    display:none!important;
+}
+
+
+   
+}
+
+@page{
+    margin:4pt;
+    padding:0;
+}

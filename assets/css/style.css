@@ -1,0 +1,1074 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Gill Sans", sans-serif;
+    
+}
+
+.titreEmploye{
+    text-align: center;
+    font-size: 1.5vw;
+    padding:1vw;
+    margin-bottom: 1vw;
+    color:white
+}
+
+#containerInfoEmploye div:nth-child(1){
+    text-align: right;
+}
+
+#containerInfoEmploye div:nth-child(2){
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:2vh
+}
+
+#containerInfoEmploye div:nth-child(3){
+    margin-top: 5vh;
+    padding:0.6vw
+}
+
+#gif{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#gif > img{
+    width: 5vw;
+    height:5vw
+}
+
+.containeLienKm{
+        margin-top:auto;
+        text-align:center;
+        margin-bottom:1vw
+}
+
+.containeLienKm > a {
+    color: white;
+    text-decoration: none;
+}
+
+.containeLienKm > a:hover {
+    color: rgb(177, 171, 171);
+    
+}
+
+.spanEmployes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.employe{
+    background-color: rgb(255, 255, 255);
+    width: 8vw;
+    padding:0.3vw;
+    margin-bottom: 0.5vw;
+    text-align: center;
+    border-radius: 0.3vw;
+    cursor: pointer;
+    color:#333333
+}
+
+.containeSelect{
+   margin-bottom:1vh
+}
+
+.containeSup{
+    margin:3vh 0;
+}
+
+#supplement{
+    display: none;
+}
+
+select{
+    background-color: rgba(68, 67, 67, 0.158);
+    width: 9vw;
+    height: 3.5vh;
+    border:none;
+    cursor: pointer;
+    font-size: 1vw;
+    color:#2C2C2C;
+    padding:0.2vw
+}
+
+#modifierSalaire,#envoieNewSalaire{
+    background-color: white;
+    border:1px solid #bef0b0;
+    font-size: 0.9vw;
+    padding:0.3vw;
+    border-radius: 5px;
+    margin-left:0.3vw;
+    color:#2C2C2C;
+    cursor:pointer
+}
+
+#modifierSalaire:hover,#envoieNewSalaire:hover{
+    outline:3px solid #bef0b0
+}
+
+#inputSalaire{
+    width: 4vw;
+    padding:0.2vw;
+    border-radius: 5px;
+    display:none
+}
+
+#inputSalaire:focus{
+    outline: 2px solid #bef0b0;
+}
+
+select:hover{
+    background-color: rgba(68, 67, 67, 0.315);
+}
+
+.ligneSepare{
+    height: 2px;
+    width: 5vw;
+    background-color: #dadada;
+    margin:2vh 0
+}
+
+.ligneSepare2{
+    height: 1px;
+    width: 2vw;
+    background-color: #333333;
+    margin:0 0.4vw
+}
+
+.employe:hover{
+    outline: 3px solid #31AEF1;
+}
+
+.enfantStat{
+    display: flex;
+    align-items: start;
+}
+
+#blockInfo{
+    width: 100%;
+    display:none;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 1vw
+}
+
+.styleInfo{
+    font-size: 1vw;
+    color:#5D6B76;
+    font-weight: bold;
+}
+
+.blockTable{
+    display: none;
+    justify-content: center;
+    margin: 7vh 0;
+}
+
+thead{
+    background-color: #333333;
+    color:white
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th,td{
+    padding:0.5vw
+}
+
+td{
+    color:#616366
+}
+
+.colorInfo{
+    color: #2C2C2C;
+}
+
+#fermeEmploye{
+    color:white;
+    font-size:1.6vw;
+    cursor: pointer;
+}
+
+#fermeEmploye:hover{
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.margeSpan{
+    margin-bottom: 2vw;
+   display: block;
+}
+
+.infoUnique{
+    display: block;
+    margin-bottom: 2vh;
+    font-size: 1vw;
+}
+
+.infoUnique > span{
+    color:white;
+    font-weight: bold;
+}
+
+.infoUnique{
+    color:#d1d1d1
+}
+
+i{
+    padding:0.5vw;
+    color:#757575
+}
+
+.employes{
+    height: 100vh;
+    width: 23%;
+}
+
+.emploie{
+    position: fixed;
+    height: 100vh;
+    width: 23%;
+    background-color: #333333;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#containerInfoEmploye{
+    background-color: #333333;
+    position: fixed;
+    height: 100vh;
+    width: 23%;
+    transform: translateX(-100%);
+}
+
+#containerChart{
+    border-bottom-right-radius: 0.4vw!important;
+    height: 30vw;
+    width: 53vw;
+    display: block
+}
+
+#containerSelect{
+    margin-top:2.5vh;
+    padding: 0 1vw;
+    display:none;
+}
+
+.choixGlobal{
+    font-size: 1vw;
+    color: #292D3D;
+}
+
+#legend {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+.statistique{
+    min-height: 100vh;
+    width: 77%;
+    background-color: #F0F0F0;
+}
+
+.tableauBord{
+    display: flex;
+}
+
+.titreGraph{
+    text-align: center;
+    font-size: 1.3vw;
+    padding:1.1vw;
+    color:#414141;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+th{
+    width: 200px;
+}
+
+td{
+    text-align: center;
+}
+
+.informationSup{
+    color:#333333;
+    width: 70%;
+    display: block;
+    padding:1vw;
+    border: 1px solid #ccced1;
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    margin:0.4vw 0 0.4vw 1vw
+}
+
+.infoSupNone{
+    text-align: center;
+    font-size: 1vw;
+    display: block;
+    color:#585858
+}
+
+#firstEnfantStat{
+    background-color: white; 
+    height: 33vw;
+    width: 53vw;
+}
+
+#firstEnInfo{
+    margin:0 auto 11vh auto;
+    display: flex;
+    align-items: center;
+}
+
+#InfoCom{
+    text-align:center;
+    padding:1.3vw 0;
+    color:#414141;
+    font-size:1vw
+}
+
+#titleSup{
+    margin-left:1vw;
+    color:#333333;
+}
+
+#fermeGraph{
+    display: none;
+}
+
+#imgProfil{
+    width: 6vw;
+    border-radius: 100%;
+    height: 6vw;
+    border:2px solid rgb(255, 255, 255)
+}
+
+#identifiantEmploye{
+    margin-top:1vh;
+    color:white;
+    font-weight: bold;
+    font-size:1vw
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+
+    #containerInfoEmploye{
+        display: none;
+    }
+
+    #fermeGraph{
+        display: block;
+        text-align: right;
+        font-size: 6vw;
+        padding-right: 1vw;
+        margin-bottom: 1vw;
+        cursor: pointer;
+        color: #333333;
+    }
+
+    .employes,.emploie{
+        width: 100%;
+    }
+
+    .statistique{
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .tableauBord{
+        height: 100%;
+        
+    }
+
+    .titreEmploye{
+        font-size: 10vw;
+        margin-bottom: 10vw;
+        padding:3vw
+    }
+
+    .spanEmployes{
+        font-size: 8vw;
+    }
+
+    .employe{
+        width: 66vw;
+        margin-bottom: 3.5vw;
+        padding: 1.3vw;
+        border-radius: 1.3vw;
+    }
+
+    .enfantStat{
+        flex-direction: column;
+        padding:2vw;
+        background-color: white;
+    }
+
+    #firstEnfantStat{
+        width: 100%;
+        height: 53vh;
+    }
+
+    #containerChart{
+        width: 100%;
+        height: 50vh 
+    }
+
+    #InfoCom,#titleSup{
+        font-size: 5vw;
+    }
+
+    .titreGraph{
+        font-size: 4vw;
+    }
+
+    .choixGlobal{
+        font-size: 4vw;}
+
+    select{
+        width: 45vw;
+        font-size: 4vw;
+        height: 4.5vh;
+    }
+
+    #enfantStatistique{
+        display: flex;
+        flex-direction:column
+    }
+
+    #firstEnInfo{
+        margin: 3vh auto;
+    }
+
+    .styleInfo{
+        font-size: 4vw;
+    }
+
+    #blockInfo{
+        align-items: center;
+        text-align: center;
+    }
+
+    .ligneSepare{
+        margin:2vh auto
+    }
+
+    .blockTable{
+        margin:5vh 0;
+        order: 3;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table{
+        width: 100%;
+    }
+    
+    table tr{
+    display: block;
+    margin-bottom: 0.5vh;
+    padding: 2.5vw;
+    }
+    
+    table td {
+    display: block;
+    text-align: right;
+    
+    }
+    
+    table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    }
+
+    #titleSup{
+        text-align: center;
+    }
+
+    .informationSup{
+        font-size: 4vw;
+        margin: 0.4vw auto;
+        width:90%
+    }
+
+    .infoSupNone{
+        font-size: 4vw;
+    }
+
+    #salaireNet{
+        display: block;
+        margin: 1vh auto;
+        background-color: white;
+        font-size: 3vw;
+    }
+
+    #inputSalaire{
+        width: 13vw;
+    }
+
+    #btnSalaire,#modifierSalaire,#envoieNewSalaire{
+        font-size: 3vw;
+        background-color: white;
+        padding:1vw 1.5vw;
+        border: 1px solid #bef0b0;
+        border-radius: 5px;
+    }
+
+    .containeLienKm > a {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) {
+    #firstEnfantStat{
+        width: 100%;
+        height: 41vh;
+        padding: 0 1.5vw 3vh 1.5vw
+    }
+
+    .containeLienKm > a {
+        display: none;
+    }
+
+    th,td{
+        padding:1vh 0
+    }
+
+    .statistique{
+        width: 73%;
+        overflow: hidden;
+    }
+
+    #containerChart{
+        width: 100%;
+        height: 43vh;
+    }
+
+    .titreEmploye,.titreGraph{
+        font-size: 2.5vw;
+        margin: 1.5vh 0;
+    }
+
+    .spanEmployes{
+        font-size: 2.5vw;
+    }
+
+    .employe{
+        width: 16vw;
+        padding:0.7vw;
+        margin-bottom:0.8vw
+    }
+
+    .employes,.emploie,#containerInfoEmploye{
+        width: 27%;
+    }
+
+    #imgProfil{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    #identifiantEmploye,.infoUnique{
+    font-size: 2.2vw;
+    text-align: center;
+    }
+
+    .choixGlobal{
+        font-size: 2.2vw;
+    }
+
+    select{
+        font-size: 2vw;
+        width: 20vw;
+    }
+
+    #enfantStatistique{
+        display: flex;
+        flex-direction:column
+    }
+
+    .blockTable{
+        order:3;
+        margin:5vh 0
+    }
+
+    #firstEnInfo{
+        margin: 0 auto 3vh auto;
+    }
+
+    #blockInfo{
+        align-items: center;
+        margin-top: 2vh;
+    
+    }
+
+    #InfoCom{
+        font-size: 3vw;
+    }
+
+    .styleInfo{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    .ligneSepare{
+        margin: 2vh auto;
+    }
+
+
+    #salaireNet{
+        display: block;
+        margin: 1vh 0 1vh 2vw;
+    }
+
+    #titleSup{
+        font-size: 2.6vw;
+        text-align: center;
+    }
+
+    .informationSup{
+        font-size: 2vw;
+        width: 75%;
+        margin:0.4vw auto 0.4vw auto
+    }
+
+    table{
+        text-align: center;
+    }
+
+    #fermeEmploye{
+        font-size: 2.6vw;
+    }
+
+    #btnSalaire,#modifierSalaire,#envoieNewSalaire{
+        font-size: 1.8vw;
+        background-color: white;
+        padding:1vw 1.5vw;
+        border: 1px solid #bef0b0;
+        border-radius: 5px;
+    }
+
+    #inputSalaire{
+        width: 9vw;
+    }
+
+    #infoSupNone{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-device-height: 350px) 
+                   and (max-device-height: 480px) 
+                   and (max-device-width: 927px) 
+                   and (orientation: landscape) {
+
+    #containerInfoEmploye{
+        display: none;
+    }
+
+    #fermeGraph{
+        display: block;
+        text-align: right;
+        font-size: 4vw;
+        padding-right: 1vw;
+        margin-bottom: 1vw;
+        cursor: pointer;
+        color: #333333;
+    }
+
+    .employes,.emploie{
+        width: 100%;
+        overflow-x: hidden;
+       
+    }
+
+    .emploie{
+        position:initial;
+    }
+
+    .statistique{
+        display: none;
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .tableauBord{
+        height: 100%;
+    }
+
+    .titreEmploye{
+        font-size: 6vw;
+        margin-bottom: 10vw;
+        padding:2vw;
+        margin:0 0 1.5vw 0
+    }
+
+    .spanEmployes{
+        font-size: 5vw;
+    }
+
+    .employe{
+        width: 48vw;
+        margin-bottom: 3.5vw;
+        padding: 1.3vw;
+        border-radius: 1.3vw;
+    }
+
+    .enfantStat{
+        flex-direction: column;
+        padding:2vw;
+        background-color: white;
+    }
+
+    #firstEnfantStat{
+        width: 100%;
+        height: 110vh;
+    }
+
+    #containerChart{
+        width: 100%;
+        height: 100vh
+    }
+
+    #InfoCom,#titleSup{
+        font-size: 3vw;
+    }
+
+    .titreGraph{
+        font-size: 4vw;
+    }
+
+    .choixGlobal{
+        font-size: 2vw;
+    }
+
+    select{
+        width: 45vw;
+        font-size: 2vw;
+        height: 8vh;
+    }
+
+    #enfantStatistique{
+        display: flex;
+        flex-direction:column;
+        height: 100%;
+    }
+
+    #firstEnInfo{
+        margin: 3vh auto;
+    }
+
+    .styleInfo{
+        font-size: 2vw;
+    }
+
+    #blockInfo{
+        align-items: center;
+        text-align: center;
+    }
+
+    .ligneSepare{
+        margin:2vh auto
+    }
+
+    .blockTable{
+        margin:5vh 0;
+        order: 3;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table{
+        width: 100%;
+    }
+    
+    table tr{
+    display: block;
+    margin-bottom: 0.5vh;
+    padding: 2.5vw;
+    }
+    
+    table td {
+    display: block;
+    text-align: right;
+    
+    }
+    
+    table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    }
+
+    #titleSup{
+        text-align: center;
+    }
+
+    .informationSup{
+        font-size: 2vw;
+        margin: 0.4vw auto;
+        width:90%
+    }
+
+    .infoSupNone{
+        font-size: 2vw;
+    }
+
+    #salaireNet{
+        display: block;
+        margin: 1vh auto;
+        background-color: white;
+        font-size: 3vw;
+    }
+
+    #inputSalaire{
+        width: 13vw;
+    }
+
+    #btnSalaire,#modifierSalaire,#envoieNewSalaire{
+        font-size: 2vw;
+        background-color: white;
+        padding:0.5vw 1vw;
+        border: 1px solid #bef0b0;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+@media (min-width: 992px) { 
+    .titreEmploye,.titreGraph{
+        font-size: 2vw;
+        margin-top: 1vh;
+    }
+
+    .containeLienKm > a {
+        display: block;
+    }
+
+    #enfantStatistique{
+        display: flex;
+        flex-direction:column
+    }
+
+    .blockTable{
+        order:3;
+        margin:5vh 0
+    }
+
+    .spanEmployes{
+        font-size: 2vw;
+    }
+
+    .employe{
+        width: 14vw;
+    }
+
+    #firstEnfantStat{
+        width: 100%;
+        height: 57vh;
+        padding:0 0 0 0.5vw
+    }
+
+    #containerChart{
+        width: 100%;
+        height: 52vh;
+    }
+
+    #imgProfil{
+        width: 9.5vw;
+        height: 9.5vw;
+    }
+
+    #identifiantEmploye,.infoUnique{
+        font-size: 1.4vw;
+    }
+
+    .infoUnique{
+        text-align: left;
+    }
+
+    .choixGlobal,select{
+        font-size: 1.5vw;
+    }
+
+    select{
+        width: 13vw;
+    }
+
+    #firstEnInfo{
+        margin: 0 auto 3vh auto
+    }
+
+    #InfoCom,#titleSup{
+        font-size: 2.3vw;
+    }
+
+    .styleInfo,.informationSup,.infoSupNone{
+        font-size: 1.8vw;
+    }
+
+    table{
+        font-size: 1.7vw;
+    }
+
+    th,td{
+        padding:1vh 0
+    }
+ }
+
+
+ @media (min-width: 1200.01px) {
+    .emploie,#containerInfoEmploye,.employes{
+        width: 23%;
+    }
+
+    #containerChart{
+        height: 28vw;
+        width: 50vw;
+    }
+
+    .titreEmploye{
+        font-size: 2vw;
+        margin-bottom:1vw
+    }
+
+    .titreGraph{
+        font-size: 1.5vw;
+        margin:0
+    }
+
+    .spanEmployes{
+        font-size: 1.5vw;
+    }
+
+    .employe{
+        width: 12vw;
+        padding:0.3vw;
+        margin-bottom:0.5vw;
+    }
+
+    .statistique{
+        width: 77%;
+    }
+
+    #firstEnfantStat{
+        width: 50vw;
+        height: 31vw;
+    }
+
+    #blockInfo{
+        align-items: start;
+        margin-top:0;
+    }
+
+    #imgProfil{
+        width: 6vw;
+        height: 6vw;
+    }
+
+    #identifiantEmploye,.infoUnique{
+        font-size: 1.15vw;
+    }
+
+    .infoUnique{
+        text-align: left;
+    }
+
+    #fermeEmploye{
+        color: white;
+        font-size: 1.6vw;
+    }
+
+    #firstEnInfo{
+        margin:0 auto 6vw auto
+    }
+
+    .choixGlobal,select{
+        font-size: 1.2vw;
+    }
+
+    select{
+        width: 11vw;
+        height: 4vh;
+    }
+
+    #InfoCom{
+        font-size: 1vw;
+    }
+
+    .styleInfo{
+        font-size: 1vw;
+        text-align: initial;
+    }
+
+    .ligneSepare{
+        margin:2vh 0
+    }
+
+    #salaireNet{
+        display: initial;
+        margin:0
+    }
+
+    #btnSalaire,#modifierSalaire,#envoieNewSalaire{
+        background-color: white;
+        border:1px solid #bef0b0;
+        font-size: 0.9vw;
+        padding:0.3vw;
+        border-radius: 5px;
+        margin-left:0.3vw;
+        color:#2C2C2C;
+        cursor:pointer
+    }
+
+    .blockTable{
+        margin:7vh ;
+        order:initial
+    }
+
+    #titleSup{
+        text-align: left;
+        font-size: 1.3vw;
+    }
+
+    .informationSup{
+        width: 70%;
+        font-size: 1vw;
+        margin:0.4vw 0 0.4vw 1vw
+    }
+
+    #inputSalaire{
+        width: 4vw;
+    }
+
+    table{
+        font-size: 1.1vw;
+        text-align: initial;
+        width: 90%;
+    }
+
+    th,td{
+        padding:1.5vh 0
+    }
+ }

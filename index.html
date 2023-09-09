@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/styleAccueil.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <div id="containerForm">
+            <div>
+                <form method="POST" action="./login.php">
+                    <input type="text" class="inputUser" name="username" placeholder="Utilisateur" required>
+                    <div id="utilisateurInvalid" class="containeInvalid">
+                        <span class="connexionInvalide">Utilisateur invalide</span>
+                    </div>
+                    <input class="inputPassword" type="password" name="password" placeholder="Mot de passe" required>
+                    <div id="passwordInvalid" class="containeInvalid">
+                        <span class="connexionInvalide">Mot de passe invalide</span>
+                    </div>
+                    <button type="submit" >Se connecter</button>
+                    <div id="champsInvalid" class="containeInvalid">
+                        <span class="connexionInvalide">Veuillez saisir tous les champs</span>
+                    </div>
+                </form>
+                <div class="ligne"></div>
+                <div style="width: 100%;">
+                    <button id="newCompte">Créer un nouveau compte</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="containeInscription">  
+            <div id="divInscription">
+                <div style="text-align: right;">
+                    <i class="fa-solid fa-xmark iconeFerme"></i>
+                </div>
+                
+                <form id="formInscript" method="POST" action="./inscription.php">
+                    <div>
+                        <input class="inputVerif" type="text" name="prenom" placeholder="Prénom">
+                        <input class="inputVerif" type="text" name="nom" placeholder="Nom">
+                    </div>
+                    <div>
+                        <input class="inputVerif" type="text" name="ville" placeholder="Ville actuel">
+                        <input class="inputVerif" type="text" name="telephone" placeholder="Téléphone">
+                    </div>
+                    <label class="labelInscrip">Date de naissance</label>
+                    <input class="inputInscrip inputVerif" type="date" name="naissance">
+                    <label class="labelInscrip">Date d'entrer en entreprise</label>
+                    <input class="inputInscrip inputVerif" type="date" name="dateEntrer">
+                    <div>
+                        <input class="inputVerif inputUseInscript" type="text" name="compte" placeholder="Compte">
+                        <input class="inputVerif inputUseInscript" type="password" name="password" placeholder="Mot de passe">
+                    </div>
+                    <button id="btnInscription" type="submit">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="containeHash">
+            <div id="hash">
+                <i id="iconeServ"></i>
+                <span id="reponseServ"></span>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+ 
+    <script>
+        var hash = window.location.hash
+        var utilInvalid = document.querySelector("#utilisateurInvalid")
+        var passwordInvalid = document.querySelector("#passwordInvalid")
+        var champsInvalid = document.querySelector("#champsInvalid")
+        var inputUser = document.querySelector(".inputUser")
+        var inputPassword = document.querySelector(".inputPassword")
+        var containeHash = document.querySelector("#containeHash")
+        var reponseServ = document.querySelector("#reponseServ")
+        var iconeServ = document.querySelector("#iconeServ")
+        var divHash = document.querySelector("#hash")
+        var formInscript = document.querySelector("#formInscript")
+        var inputVerif = document.querySelectorAll(".inputVerif")
+
+        formInscript.onsubmit = function(e){
+            e.preventDefault()
+            var t = true
+            inputVerif.forEach(element => {
+                if(element.value == ""){
+                    element.style.border="1px solid red"
+                    t = false
+                }else{
+                    element.style.border="1px solid #DDDFE2"
+                }
+            });
+
+            if(t){
+                this.submit()
+            }
+        }
+
+       switch(true) {
+            case hash == "#utilisateurInvalide" :
+                    utilInvalid.style.display="block"
+                    inputUser.style.border="2px solid red"
+                    break;
+            case hash == '#passwordInvalid':
+                    passwordInvalid.style.display="block"
+                    inputPassword.style.border="2px solid red"
+                    break;
+            case hash == "#champsVide" :
+                    inputUser.style.border="2px solid red"
+                    inputPassword.style.border="2px solid red"
+                    champsInvalid.style.display="block"
+                    break;
+            case hash == "#register" : 
+                    containeHash.style.display="block"
+                    divHash.style.color="#93CE24"
+                    containeHash.style.transform="translateY(0)"
+                    iconeServ.className="fa-solid fa-circle-check"
+                    reponseServ.innerHTML = "Inscription réussis <br> Connectez-vous"
+                    setTimeout(()=>{
+                        containeHash.style.transform="translateY(150%)"
+                    },5000)
+                    containeHash.style.transition="transform 0.5s linear"
+                    break;
+            case hash == "#erreur" : 
+                    divHash.style.color="red"
+                    containeHash.style.display="block"
+                    containeHash.style.transform="translateY(0)"
+                    iconeServ.className="fa-solid fa-circle-exclamation"
+                    reponseServ.innerHTML = "Une erreur est survenue"
+                    setTimeout(()=>{
+                        containeHash.style.transform="translateY(150%)"
+                    },5000)
+                    containeHash.style.transition="transform 0.5s linear"
+                    break;        
+            default:
+                    utilInvalid.style.display="none"
+                    passwordInvalid.style.display="none"
+                    inputUser.style.border="1px solid #DDDFE2"
+                    inputPassword.style.border="1px solid #DDDFE2"
+                    containeHash.style.display="none"
+        }
+
+
+        var newCompte = document.querySelector("#newCompte")
+        var containeInscription = document.querySelector("#containeInscription")
+        var iconeFerme = document.querySelector(".iconeFerme")
+
+        newCompte.onclick = function(){
+            containeInscription.style.display="flex"
+        }
+
+        iconeFerme.onclick = function(){
+            containeInscription.style.display="none"
+        }
+    </script>
+</body>
+</html>

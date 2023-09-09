@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0
+}
+
+table,th{
+    border: 1px solid #333333;
+    text-align: center; 
+}
+
+th{
+    padding:1vw 0.5vw;
+    font-size: 1.1vw;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+thead{
+    background-color: #333333;
+    color: white;
+}
+
+td{
+    padding:0.5vw 
+}
+
+input{
+    font-size: 1vw;
+    outline: 1px solid grey;
+}
+
+input:focus{
+    outline: 1px solid rgb(65, 161, 252);
+}
+
+.containerCity{
+    background-color: #d6d6d6;
+    width: 93%;
+    z-index: 1;
+    text-align: left;
+}
+
+li{
+    list-style: none;
+    cursor:pointer;
+    padding:0.2vw;
+}
+
+li:hover{
+    background-color: antiquewhite;
+}
+
+.containeTable{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+
+.labelLigne{
+    font-size: 1.2vw;
+}
+
+.containeNbLigne{
+    margin-top:0.7vw;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vw;
+}
+
+#btnKilometre{
+    font-size: 1.3vw;
+    padding:0.3vw 1vw;
+    background-color: #0084FF;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 0.1vw;
+    cursor: pointer;
+}
+
+#btnKilometre:hover{
+    outline: 2px solid #0084FF;
+}
+
+#selectLigne{
+    font-size: 1vw;
+    width: 5vw;
+    padding:0.1vw;
+    background-color: #eaeaee;
+    border-radius: 0.2vw;
+    border:1px solid #cacaca
+}

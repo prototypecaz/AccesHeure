@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.containeSelect{
+    height: 95.5vh;
+    width: 25%;
+    background-color: #1b1b1b;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow:hidden
+}
+
+.containeSelect div:nth-child(3){
+    display:flex;
+    justify-content: end;
+    margin-right:0.7vw;
+    position: relative;
+    z-index: 2;
+}
+
+.containeSelect div:nth-child(3) div:nth-child(1){
+    margin-right:0.7vw
+
+}
+
+.containeTable{
+    height: 95.5vh;
+    width: 72.3%;
+    background-color: #292929;
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    display: flex;
+    justify-content: center;
+   align-items:flex-start;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    height: 0.5vw;
+    width: 0.5vw;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a5a5a5;
+    -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+.infoImprime{
+    display: none;
+}
+
+label{
+    font-size: 1.6vw;
+    display: block;
+    margin-left: 1vw;
+}
+
+.containeSelect>div:nth-child(2)>label:nth-child(3){
+    margin-top:1.5vw
+}
+
+.containeSelect>div:nth-child(1)>a>i{
+    font-size: 1.8vw;
+    color: white;
+    margin-left: 1vw;
+}
+
+.containeSelect>div:nth-child(1)>a>i:hover{
+    
+    color: rgb(167, 167, 167);
+ 
+}
+
+
+.containeSelect > div{
+    margin:1vw 0
+}
+
+.containeMoisFournis{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1.8vw;
+}
+
+select{
+    margin-left:1vw;
+    background-color: #1b1b1b;
+    color:rgb(255, 255, 255);
+    font-size: 1.4vw;
+    width: 50%;
+    padding:0.3vw;
+    border:none;
+    border-bottom: 1px solid white;
+
+    cursor:pointer
+}
+
+.road{
+    position: absolute;
+    bottom:-3.2%;
+}
+
+.road > img{
+    width: 20vw; 
+}
+
+#moisChoisis{
+    color:black
+}
+
+.infoImprime > span {
+    color:black;
+    display:block;
+    font-weight:bold;
+    margin:2vw 0;
+    font-size:1.5vw
+}
+
+table{
+    width: 96%;
+    background-color: white;
+    text-align: center;
+    margin:3vw 0;
+    display:none
+}
+
+td,th{
+    color: black;
+    padding:1vw 1vw;
+}
+
+td{
+    padding:0.5vw 0.2vw;
+    font-size: 1vw;
+}
+
+th{
+    background-color: #333333;
+    color: white;
+   
+}
+
+thead{
+    font-size: 1.2vw;
+}
+
+tfoot,.total{
+    background-color: #f8f7e6;
+    color:black;
+    font-size: 1.2vw
+}
+
+#kilometreTotal,#totalEuros{
+    font-weight: bold;
+    font-size: 1.2vw
+}
+
+.total{
+    text-align: right;
+}
+
+.btnImprime{
+    width: 2.7vw;
+    height: 2.7vw;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btnImprime:hover{
+   outline: 2px solid rgb(161, 161, 161);
+}
+
+i{
+    color: black;
+    font-size: 1.3vw;
+}
+
+.indemnite{
+    font-size: 1vw;
+    padding:0.5vw
+}
